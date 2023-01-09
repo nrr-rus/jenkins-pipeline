@@ -26,6 +26,7 @@ pipeline {
         always {
             script {
                 sh "pkill -F /tmp/tunnel.pid"
+                sh "sudo rm docker.sock"
            }
        }
     }
